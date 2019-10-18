@@ -309,4 +309,3 @@ def validate(val_loader, model, epoch, output_writers):
 
 if __name__ == '__main__':
     main()
-    print('Hello')
