@@ -23,9 +23,9 @@ dataset_names = sorted(name for name in datasets.__all__)
 
 parser = argparse.ArgumentParser(description='PyTorch FlowNet Training on several datasets',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument('data', metavar='DIR',
+parser.add_argument('--dataset_path', metavar='DIR',
                     help='path to dataset')
-parser.add_argument('--dataset', metavar='DATASET', default='flying_chairs',
+parser.add_argument('--dataset_name', metavar='DATASET', default='Knot_Tying',
                     choices=dataset_names,
                     help='dataset type : ' +
                     ' | '.join(dataset_names))
